@@ -2,10 +2,15 @@
   "name": "tdd",
   "version": "1.0.0",
   "description": "Simple TDD test",
-  "main": "index.js",
   "private": false,
+  "main": "app.js",
+  "engines": {
+    "node": "^6.8.1",
+    "npm": "^4.0.5"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e less,js,asp,html --watch src/views"
   },
   "keywords": [
     "TDD",
@@ -15,8 +20,31 @@
   "license": "MIT",
   "dependencies": {
     "chai": "^4.2.0",
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
     "mocha": "^5.2.0",
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-browserify": "^5.0.0",
+    "grunt-clean": "^0.4.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-newer": "^1.2.0",
+    "grunt-notify": "^0.4.5",
+    "grunt-preprocess": "^5.1.0",
+    "load-grunt-tasks": "^3.5.2",
+    "nodemon": "^1.11.0",
+    "preprocess": "^3.1.0",
+    "reload": "^2.3.1"
   }
 }

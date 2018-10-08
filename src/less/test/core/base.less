@@ -1,0 +1,116 @@
+
+/* Base styling */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+/*
+  the above is need for the footer to stick to
+  the bottom of the page works in accordance with
+  params added in the 'footer-responsive' component
+
+*/
+
+body {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 100px;
+  overflow-x: hidden;
+  font-family: Verdana, Arial, sans-serif;
+  background: @white;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.column {
+  width: 60%;
+  margin: 0 auto;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Background colours */
+.bg-white {
+  background: @white !important;
+}
+
+.bg-dark-blue {
+  background: @blue !important;
+}
+
+.content {
+
+  .simple-footer-responsive {
+    .column {
+      display: flex;
+    }
+    div {
+      .row {
+        margin-bottom: 0;
+        padding: 20px 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: @breakpointXs) {
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .row {
+    display: block;
+    padding-top: 10px;
+  }
+
+}
+
+@media (min-width: @breakpointXs) and (max-width: @breakpointMd) {
+  .column {
+    width: 100%;
+    padding: 20px;
+    margin: -12px 15px;
+  }
+
+  .row {
+    display: block;
+    padding: 10px;
+    &:nth-last-child(1) {
+      padding-bottom: 50px;
+    }
+  }
+
+}
+
+@media (min-width: @breakpointMd) and (max-width: @breakpointXl) {
+  .simple-footer-responsive {
+    .column {
+      width: 33%;
+    }
+  }
+}
+
+@media (min-width: @breakpointMd) and (max-width: @breakpointLg) {
+  .column {
+    width: 85%;
+  }
+}
+
+/* END of base styling */

@@ -1,0 +1,35 @@
+
+/* Buttons */
+.button {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 15%;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+
+  &.primary {
+    color: @white;
+    background: @dodgerblue;
+
+    &:active,
+    &:focus {
+      color: @dodgerblue;
+      background: @white;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media all and (max-width: @breakpointXs) {
+  a.primary {
+    display: block;
+  }
+}

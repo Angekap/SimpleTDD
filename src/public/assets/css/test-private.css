@@ -1,0 +1,199 @@
+/*
+    style includes
+*/
+p {
+  font-family: Verdana, Arial, sans-serif;
+  color: #1573b3;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.6;
+}
+/* Base styling */
+html {
+  position: relative;
+  min-height: 100%;
+}
+/*
+  the above is need for the footer to stick to
+  the bottom of the page works in accordance with
+  params added in the 'footer-responsive' component
+
+*/
+body {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 100px;
+  overflow-x: hidden;
+  font-family: Verdana, Arial, sans-serif;
+  background: #ffffff;
+}
+.container {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.row {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+}
+.column {
+  width: 60%;
+  margin: 0 auto;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+/* Background colours */
+.bg-white {
+  background: #ffffff !important;
+}
+.bg-dark-blue {
+  background: #05286a !important;
+}
+.content .simple-footer-responsive .column {
+  display: flex;
+}
+.content .simple-footer-responsive div .row {
+  margin-bottom: 0;
+  padding: 20px 20px;
+}
+@media (max-width: 480px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .column {
+    width: 100%;
+  }
+  .row {
+    display: block;
+    padding-top: 10px;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .column {
+    width: 100%;
+    padding: 20px;
+    margin: -12px 15px;
+  }
+  .row {
+    display: block;
+    padding: 10px;
+  }
+  .row:nth-last-child(1) {
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1100px) {
+  .simple-footer-responsive .column {
+    width: 33%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .column {
+    width: 85%;
+  }
+}
+/* END of base styling */
+/* Buttons */
+.button {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 15%;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+}
+.button.primary {
+  color: #ffffff;
+  background: #0065b3;
+}
+.button.primary:active,
+.button.primary:focus {
+  color: #0065b3;
+  background: #ffffff;
+}
+.button.primary:hover {
+  text-decoration: underline;
+}
+@media all and (max-width: 480px) {
+  a.primary {
+    display: block;
+  }
+}
+/*
+
+  Content header
+
+*/
+.content-header-responsive {
+  width: 100%;
+  background: transparent;
+  padding-left: 10px;
+}
+.content-header-responsive .heading {
+  z-index: 100;
+}
+.content-header-responsive .heading h1 {
+  text-decoration: underline;
+}
+@media (min-width: 480px) and (max-width: 650px) {
+  .content-header-responsive {
+    padding: 25px 0 10px 25px;
+  }
+}
+/*
+
+  Simple footer style
+
+*/
+.simple-footer-responsive {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  display: block;
+  text-align: center;
+}
+.simple-footer-responsive .container {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: none;
+}
+.simple-footer-responsive .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.simple-footer-responsive .column {
+  width: 50%;
+  margin: 0;
+}
+.simple-footer-responsive span.copyright {
+  line-height: 40px !important;
+  font-family: Verdana, Arial, sans-serif;
+  color: #87CEFA;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.6;
+  text-transform: none;
+}
+@media (max-width: 480px) {
+  .simple-footer-responsive {
+    height: 100px;
+  }
+  .simple-footer-responsive .column {
+    width: 100%;
+  }
+  .simple-footer-responsive .row {
+    margin-top: 0;
+  }
+}

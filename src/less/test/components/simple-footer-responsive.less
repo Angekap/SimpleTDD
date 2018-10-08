@@ -1,0 +1,55 @@
+/*
+
+  Simple footer style
+
+*/
+.simple-footer-responsive {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  display: block;
+  text-align: center;
+
+  .container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    margin-top:10px;
+    border: none;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .column {
+    width: 50%;
+    margin: 0;
+  }
+
+  span {
+    &.copyright {
+      line-height: 40px !important;
+      .text(@sky-blue);
+      text-transform: none;
+    }
+  }
+}
+
+@media (max-width: @breakpointXs) {
+  .simple-footer-responsive {
+    height: 100px;
+
+    .column {
+      width: 100%;
+    }
+
+    .row {
+      margin-top: 0;
+    }
+  }
+}
