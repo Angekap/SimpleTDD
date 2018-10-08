@@ -1,0 +1,22 @@
+{
+  "name": "tdd",
+  "version": "1.0.0",
+  "description": "Simple TDD test",
+  "main": "index.js",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "TDD",
+    "Simple"
+  ],
+  "author": "Ange L. Tshibenji",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "express": "^4.16.3",
+    "mocha": "^5.2.0",
+    "request": "^2.88.0"
+  }
+}
